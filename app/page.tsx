@@ -8,7 +8,7 @@ import myprojects from '@/data/projects.json';
 
 export default function Home() {
 
-  const skills = ["css3", "express", "git", "html5", "javascript", "jest", "jquery", "mongodb", "mysql", "nginx", "nextjs", "nodejs", "npm", "postgresql", "postman", "prisma", "python", "react", "ruby", "supabase", "tailwindcss", "typescript", "vercel", "vite", "vscode"];
+  const skills = ["css", "express", "git", "html", "javascript", "jest", "jquery", "mongodb", "mysql", "nginx", "nextjs", "nodejs", "npm", "postgresql", "postman", "prisma", "python", "react", "ruby", "supabase", "tailwindcss", "typescript", "vercel", "vite", "vscode"];
 
   return (
     <main className="flex min-h-screen flex-col items-center justify-between">
