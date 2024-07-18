@@ -1,7 +1,8 @@
 import About from '@/components/about';
 import Connect from '@/components/connect';
-import Projects from '@/components/projects';
 import Descriptor from '@/components/descriptor';
+import Header from '@/components/header';
+import Projects from '@/components/projects';
 import Tech from '@/components/tech';
 
 import myprojects from '@/data/projects.json';
@@ -15,27 +16,9 @@ export default function Home() {
   return (
     <main className="flex min-h-screen min-w-screen flex-col items-center bg-black text-white">
       <section className="w-full flex flex-col h-screen justify-between">
-        <header className="w-full flex justify-between px-[80px] py-[20px]">
-          <div>
-            Styles Kim
-          </div>
-          <nav className="flex w-[500px] justify-between">
-            <p className="hover:cursor-pointer hover:scale-125 hover:font-bold duration-300">
-              About
-            </p>
-            <p className="hover:cursor-pointer hover:scale-125 hover:font-bold duration-300">
-              Skills
-            </p>
-            <p className="hover:cursor-pointer hover:scale-125 hover:font-bold duration-300">
-              Projects
-            </p>
-            <p className="hover:cursor-pointer hover:scale-125 hover:font-bold duration-300">
-              Connect
-            </p>
-          </nav>
-        </header>
+        <Header />
         <div className="flex flex-col items-center">
-          <h1 className="text-[70px]">
+          <h1 className="text-[600%]">
             Styles Kim
           </h1>
           <Descriptor />
