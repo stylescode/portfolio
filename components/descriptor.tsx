@@ -4,7 +4,7 @@ import React, { useState } from 'react';
 
 const Descriptor = () => {
 
-  const descriptors = ["Software Engineer", "Full Stack Developer", "Problem Solver", "Your Next Collaborator"]
+  const descriptors = ["Software Engineer", "Full Stack Developer", "Problem Solver", "Collaborator"]
 
   const [descriptor, setDescriptor] = useState(descriptors[0])
 
@@ -21,7 +21,7 @@ const Descriptor = () => {
   setTimeout(changeDescriptor, 2000);
 
   return (
-    <div className="bg-red-100">
+    <div className="text-[200%]">
       {descriptor}
     </div>
   )
