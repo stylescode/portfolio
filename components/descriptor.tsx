@@ -21,7 +21,7 @@ const Descriptor = () => {
   setTimeout(changeDescriptor, 2000);
 
   return (
-    <div className="text-[200%]">
+    <div className="text-2xl text-blue-500 pt-4">
       {descriptor}
     </div>
   )
