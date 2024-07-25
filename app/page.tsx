@@ -11,14 +11,12 @@ import { RiArrowDownWideFill } from "react-icons/ri";
 
 export default function Home() {
 
-  const skills = ["css", "express", "git", "html", "javascript", "jest", "jquery", "mongodb", "mysql", "nginx", "nextjs", "nodejs", "npm", "postgresql", "postman", "prisma", "python", "react", "ruby", "supabase", "tailwindcss", "typescript", "vercel", "vite", "vscode"];
-
   return (
-    <main className="flex min-h-screen min-w-screen flex-col items-center bg-black text-white">
-      <section className="w-full flex flex-col h-screen justify-between">
+    <main className="flex flex-col items-center bg-black text-white min-w-screen ">
+      <section className="flex flex-col min-h-screen justify-between">
         <Header />
-        <div className="flex flex-col items-center">
-          <h1 className="text-[600%]">
+        <div className="flex flex-col items-center w-full">
+          <h1 className="text-7xl">
             Styles Kim
           </h1>
           <Descriptor />
@@ -27,8 +25,10 @@ export default function Home() {
           <RiArrowDownWideFill className="w-[70px] h-[70px] animate-bounce"/>
         </div>
       </section>
-      <About />
-      <Tech technologies={skills} />
+      <div className="w-screen h-screen">
+        <About />
+      </div>
+      <Tech />
       <Projects projects={myprojects} />
       <Connect />
     </main>
