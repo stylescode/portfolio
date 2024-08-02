@@ -4,13 +4,13 @@ const Header = () => {
   const sections = ["About", "Skills", "Projects", "Connect"];
 
   return (
-    <header className="w-full flex justify-between px-[100px] py-[30px]">
+    <header className="w-full flex justify-between">
       <div>
         Styles Kim
       </div>
-      <nav className="flex w-[400px] justify-between">
+      <nav className="flex justify-between">
         {sections.map((section) => (
-          <p key={section} className="hover:cursor-pointer hover:scale-125 hover:font-bold duration-300 hover:underline">
+          <p key={section} className="hover:cursor-pointer hover:scale-125 hover:font-bold duration-300 hover:underline leading-normal">
             {section}
           </p>
         ))}
