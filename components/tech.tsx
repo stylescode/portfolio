@@ -33,7 +33,18 @@ const Tech = ({}) => {
 
   return (
     <div className="flex w-full bg-gray-700 overflow-hidden">
-      <IconSlider icons={skills} />
+      {skills.map((skill, index) => (
+        <div key={skill.name} className="flex items-center border-2">
+          <Image
+            src={`https://skillicons.dev/icons?i=${skill.image.toLowerCase()}`}
+            alt={`${skill.name} logo`}
+            width={20}
+            height={20}
+            className="w-[20px] h-[20px] object-contain"
+          />
+          <div>{skill.name}</div>
+        </div>
+      ))}
     </div>
   );
 }
