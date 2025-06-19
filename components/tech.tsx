@@ -32,15 +32,15 @@ const Tech = ({}) => {
   ];
 
   return (
-    <div className="flex w-full bg-gray-700 overflow-hidden">
+    <div className="flex w-3/4 border-2 border-gray-300 rounded-lg p-4 gap-4 flex-wrap justify-center">
       {skills.map((skill, index) => (
-        <div key={skill.name} className="flex items-center border-2">
+        <div key={skill.name} className="flex items-center border-2 rounded-xl px-4 py-2">
           <Image
             src={`https://skillicons.dev/icons?i=${skill.image.toLowerCase()}`}
             alt={`${skill.name} logo`}
             width={20}
             height={20}
-            className="w-[20px] h-[20px] object-contain"
+            className="w-[20px] h-[20px] mr-3"
           />
           <div>{skill.name}</div>
         </div>
