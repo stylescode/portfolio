@@ -1,0 +1,56 @@
+'use client';
+
+import Image from 'next/image';
+import { useState, useEffect } from 'react';
+
+import Icon from '@mdi/react';
+import { mdiCircle } from '@mdi/js';
+
+const ProfileCard = ({}) => {
+
+  const titles = [
+    "Full Stack Developer",
+    "Software Engineer",
+    "Web Developer",
+    "Programmer",
+    "Tech Enthusiast",
+    "Problem Solver",
+    "Boba Lover",
+    "Board Game Fanatic",
+  ]
+
+  const [currentTitle, setCurrentTitle] = useState(titles[0]);
+
+  const changeTitle = () => {
+    const randomIndex = Math.floor(Math.random() * titles.length);
+    setCurrentTitle(titles[randomIndex]);
+  }
+
+  setTimeout(changeTitle, 4000);
+
+  return (
+    <div className="flex flex-col border border-gray-200 rounded-lg w-1/2 items-center mt-32 mb-32 pb-8 shadow-xl">
+      <div className="flex bg-gray-200 border border-b-gray-300 py-3 px-4 gap-2 w-full rounded-t-lg">
+        <Icon path={mdiCircle} size={0.6} className="text-red-500"/>
+        <Icon path={mdiCircle} size={0.6} className="text-yellow-400"/>
+        <Icon path={mdiCircle} size={0.6} className="text-green-500"/>
+      </div>
+      <section className="flex border border-blue-400 mt-8 mb-8 w-3/4 justify-evenly">
+        <Image
+          src="https://avatars.githubusercontent.com/u/139181994?v=4"
+          alt="Profile Picture"
+          className="rounded-full w-42 h-42"
+          width={200}
+          height={200}
+        />
+        <div className="flex flex-col items-center justify-center border border-black">
+          <h2 className="text-6xl">Styles Kim</h2>
+          <h3 className="text-2xl">{currentTitle}</h3>
+        </div>
+      </section>
+      <p className="border border-gray-300 py-2 px-2 rounded-lg text-center w-3/4">Hello, I&apos;m Styles, a full-stack developer.</p>
+    </div>
+  );
+}
+
+export default ProfileCard;
