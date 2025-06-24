@@ -1,10 +1,18 @@
 'use client';
+import { DynaPuff } from "next/font/google";
+
+const dynaPuff = DynaPuff({
+  weight: ["400", "500", "600", "700"],
+  subsets: ["latin"],
+  variable: "--font-dynapuff",
+});
 
 import Image from 'next/image';
-import { useState, useEffect } from 'react';
+import { useState } from 'react';
 
 import Icon from '@mdi/react';
 import { mdiCircle } from '@mdi/js';
+
 
 const ProfileCard = ({}) => {
 
@@ -35,7 +43,7 @@ const ProfileCard = ({}) => {
         <Icon path={mdiCircle} size={0.6} className="text-yellow-400"/>
         <Icon path={mdiCircle} size={0.6} className="text-green-500"/>
       </div>
-      <section className="flex border border-blue-400 mt-8 mb-8 w-3/4 justify-evenly">
+      <section className="flex mt-8 mb-8 w-3/4 justify-evenly">
         <Image
           src="https://avatars.githubusercontent.com/u/139181994?v=4"
           alt="Profile Picture"
@@ -43,12 +51,13 @@ const ProfileCard = ({}) => {
           width={200}
           height={200}
         />
-        <div className="flex flex-col items-center justify-center border border-black">
-          <h2 className="text-6xl">Styles Kim</h2>
-          <h3 className="text-2xl">{currentTitle}</h3>
+        <div className=" flex flex-col items-center justify-center">
+          <h2 className={`font-sans text-6xl ${dynaPuff.className} font-medium tracking-wide`}>Styles Kim</h2>
+          <h3 className="mt-4 text-2xl">{currentTitle}</h3>
         </div>
       </section>
-      <p className="border border-gray-300 py-2 px-2 rounded-lg text-center w-3/4">Hello, I&apos;m Styles, a full-stack developer.</p>
+      <p className="border border-gray-300 py-2 px-2 rounded-lg text-center w-4/5">Welcome to my corner of the web! I&#39;m Styles, a full-stack developer committed to crafting user-friendly & innovative apps through meticulous problem solving and creative thinking. I thrive on the endless well of knowledge this world provides with a strong dedication toward continuous learning. I aim to deliver impactful, high-quality results in dynamic and collaborative work spaces with a keen awareness of the evolving tech landscape, sturdy foundational skills, and an understanding of the pivotal role communication has in achieving success.
+      </p>
     </div>
   );
 }
