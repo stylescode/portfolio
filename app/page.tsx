@@ -1,9 +1,11 @@
-import About from '@/components/about';
+import About from '@/components/About';
 import Connect from '@/components/connect';
-import Descriptor from '@/components/descriptor';
-import Header from '@/components/header';
-import Projects from '@/components/projects';
-import Tech from '@/components/tech';
+import Header from '@/components/Header';
+import Projects from '@/components/Projects';
+
+import ProfileCard from '@/components/ProfileCard';
+import Technologies from '@/components/Technologies';
+
 
 import myprojects from '@/data/projects.json';
 
@@ -12,24 +14,16 @@ import { RiArrowDownWideFill } from "react-icons/ri";
 export default function Home() {
 
   return (
-    <main className="flex flex-col items-center bg-black text-white min-w-screen ">
-      <section className="flex flex-col min-h-screen justify-between">
-        <Header />
-        <div className="flex flex-col items-center w-full">
-          <h1 className="text-7xl">
-            Styles Kim
-          </h1>
-          <Descriptor />
-        </div>
-        <div className="self-center">
-          <RiArrowDownWideFill className="w-[70px] h-[70px] animate-bounce"/>
-        </div>
-      </section>
-      <div className="w-screen h-screen">
-        <About />
-      </div>
-      <Tech />
+    <main className="flex flex-col bg-white border border-black min-h-screen min-w-screen items-center px-12">
+      <Header />
+      <ProfileCard />
+      <div> Projects </div>
       <Projects projects={myprojects} />
+      <div> Skills </div>
+      <Technologies />
+      <div> About me </div>
+      <About />
+      <div> Connect </div>
       <Connect />
     </main>
   );
