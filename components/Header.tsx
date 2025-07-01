@@ -18,7 +18,7 @@ const Header = () => {
       </div>
       <nav className="flex justify-evenly w-1/3">
         {sections.map((section) => (
-          <p key={section} className="hover:cursor-pointer hover:font-bold duration-300  leading-normal">
+          <p key={section} className="hover:cursor-pointer hover:font-bold hover:text-blue-700 duration-300  leading-normal">
             {section}
           </p>
         ))}
