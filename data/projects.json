@@ -1,0 +1,30 @@
+[
+  {
+    "name": "Atelier",
+    "description": "e-commerce web app",
+    "images": [],
+    "demoLink": "https://github.com/stylescode",
+    "codeLink": "https://github.com/stylescode"
+  },
+  {
+    "name": "BobaBro",
+    "description": "social media app",
+    "images": [],
+    "demoLink": "https://github.com/stylescode",
+    "codeLink": "https://github.com/stylescode"
+  },
+  {
+    "name": "ManorMatch",
+    "description": "booking platform for luxury estate and lifestyle services",
+    "images": [],
+    "demoLink": "https://github.com/stylescode",
+    "codeLink": "https://github.com/stylescode"
+  },
+  {
+    "name": "Mood",
+    "description": "online journal app featuring mood tracking using AI",
+    "images": [],
+    "demoLink": "https://github.com/stylescode",
+    "codeLink": "https://github.com/stylescode"
+  }
+]
