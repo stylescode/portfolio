@@ -17,13 +17,13 @@ export default function Home() {
     <main className="flex flex-col bg-white border border-black min-h-screen min-w-screen items-center px-12">
       <Header />
       <ProfileCard />
-      <div> Projects </div>
-      <Projects projects={myprojects} />
-      <div> Skills </div>
+      <div className="text-blue-700 font-bold mb-8 text-4xl"> skills </div>
       <Technologies />
-      <div> About me </div>
+      <div className="text-blue-700 font-bold mb-8 text-4xl"> projects </div>
+      <Projects projects={myprojects} />
+      <div className="text-blue-700 font-bold mb-8 text-4xl"> about me </div>
       <About />
-      <div> Connect </div>
+      <div className="text-blue-700 font-bold mb-8 text-4xl"> connect </div>
       <Connect />
     </main>
   );
