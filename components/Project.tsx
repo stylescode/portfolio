@@ -10,7 +10,7 @@ interface ProjectProps {
 
 const Project = ({ project }: ProjectProps) => {
   return (
-    <div className="border border-blue-300 flex flex-col w-1/2">
+    <div className="border border-blue-300 flex flex-col w-1/5">
       <h1>{project.name}</h1>
       <div>{project.description}</div>
       <button className="bg-black text-white px-4 py-2 rounded-lg">
