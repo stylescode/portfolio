@@ -1,4 +1,6 @@
 import { DynaPuff } from "next/font/google";
+import Icon from '@mdi/react';
+import { mdiMoonWaxingCrescent } from '@mdi/js';
 
 const dynaPuff = DynaPuff({
   weight: ["400", "500", "600", "700"],
@@ -12,7 +14,7 @@ const Header = () => {
   const sections = ["About", "Skills", "Projects", "Connect"];
 
   return (
-    <header className="w-full flex justify-between border border-gray-300 rounded-2xl py-4 px-48 mt-8 shadow-lg text-lg">
+    <header className="w-full flex justify-between border border-gray-300 rounded-2xl py-4 px-48 mt-8 shadow-lg text-xl items-center">
       <div className={`${dynaPuff.className} text-blue-700 font-medium text-2xl`}>
         Styles Kim
       </div>
@@ -23,9 +25,11 @@ const Header = () => {
           </p>
         ))}
       </nav>
-      <div>
-        icon
-      </div>
+      <Icon
+        path={mdiMoonWaxingCrescent}
+        size={1}
+        className="hover:cursor-pointer hover:text-blue-700"
+      />
     </header>
   );
 }
