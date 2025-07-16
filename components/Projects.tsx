@@ -15,7 +15,7 @@ interface ProjectsProps {
 
 const Projects = ({ projects }: ProjectsProps) => {
   return (
-    <div className="border border-black flex w-3/4" >
+    <div className="border border-black flex w-4/5 justify-evenly mb-60" >
       {projects.map((project) => (
         <Project key={project.name} project={project} />
       ))}
