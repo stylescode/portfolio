@@ -39,9 +39,6 @@ const Typewriter = ({phrases, delay}: TypewriterProps) => {
   return (
     <div className="flex flex-col">
       <div>
-        testing:
-      </div>
-      <div>
         {displayedText}
       </div>
     </div>
